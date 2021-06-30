@@ -13,7 +13,8 @@ test
 
 ```
 docker image build -t cslroot/textlint-reviewdog-bitbucket:latest .
-docker run --rm -v $PWD:/work cslroot/textlint-reviewdog-bitbucket .
+docker run --rm -it -v $PWD:/work cslroot/textlint-reviewdog-bitbucket
+/textlint-reviewdog-bitbucket.sh .
 ```
 
 ## samples

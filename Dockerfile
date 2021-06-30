@@ -19,7 +19,4 @@ RUN curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/insta
 
 WORKDIR /work
 COPY ./.textlintrc .
-COPY ./entrypoint.sh /
-
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["."]
+COPY ./textlint-reviewdog-bitbucket.sh /
