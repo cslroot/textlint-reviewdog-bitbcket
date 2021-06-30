@@ -12,8 +12,8 @@ test
 ## memo
 
 ```
-docker image build -t cslroot/textlint-reviewdog-bitbcket:latest .
-docker run --rm -v $PWD:/work cslroot/textlint-reviewdog-bitbcket .
+docker image build -t cslroot/textlint-reviewdog-bitbucket:latest .
+docker run --rm -v $PWD:/work cslroot/textlint-reviewdog-bitbucket .
 ```
 
 ## samples
@@ -34,5 +34,5 @@ A, B, C, D, E, F などカンマが多い文章です。
 設定を適応するではなく、適用するが正しいです。
 これかも。
 そうすることができる。
-リイr−スのような不自然なアルファベットの混入。
+リイ r− スのような不自然なアルファベットの混入。
 対応する(がない状態。
