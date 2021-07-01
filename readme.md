@@ -1,15 +1,17 @@
-# textlint-reviewdog for bitbucket
+# dockerfile for textlint-reviewdog for bitbucket pipeline
 
-test
+https://hub.docker.com/repository/docker/cslroot/textlint-reviewdog-bitbucket
 
-## installed
+
+## installed tools
 
 - golang:latest
 - nodejs 16.x
 - reviewdog
 - textlint with default .textlintrc and "preset-ja-technical-writing"
 
-## memo
+
+# memo
 
 ```
 docker image build -t cslroot/textlint-reviewdog-bitbucket:latest .
