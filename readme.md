@@ -1,4 +1,4 @@
-# dockerfile for textlint-reviewdog for bitbucket pipeline
+# dockerfile for textlint-reviewdog on bitbucket pipeline
 
 https://hub.docker.com/repository/docker/cslroot/textlint-reviewdog-bitbucket
 
