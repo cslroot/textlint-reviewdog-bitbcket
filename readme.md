@@ -3,6 +3,32 @@
 https://hub.docker.com/repository/docker/cslroot/textlint-reviewdog-bitbucket
 
 
+## how to use
+
+Add `.textlintrc` and `bitbucket-pipelines.yml` into your document bitbucket repo.
+
+`.textlintrc` sample
+
+```json:.textlintrc
+{
+    "rules": {
+        "preset-ja-technical-writing": true
+    }
+}
+```
+
+`bitbucket-pipelines.yml` sample
+
+```yml:bitbucket-pipelines.yml
+pipelines:
+  default:
+    - step:
+        name: Reviewdog-textlint
+        image: cslroot/textlint-reviewdog-bitbucket
+        script:
+          - /textlint-reviewdog-bitbucket.sh .
+```
+
 ## installed tools
 
 - golang:latest
