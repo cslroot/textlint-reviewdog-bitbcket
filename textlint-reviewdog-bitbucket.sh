@@ -6,7 +6,7 @@ target=$1
 textlint_exit_val="0"
 reviewdog_exit_val="0"
 
-textlint_check_output=$(textlint -f checkstyle "${target}" --config .textlintrc 2>&1) \
+textlint_check_output=$(npx textlint -f checkstyle "${target}" --config .textlintrc 2>&1) \
                       || textlint_exit_val="$?"
 echo "${textlint_check_output}"
 echo "${textlint_exit_val}"
